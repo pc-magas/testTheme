@@ -5,7 +5,13 @@ if(!function_exists('loadThemerequirements')):
 
 function loadThemerequirements()
 {
-	load_theme_textdomain( 'testTheme', get_stylesheet_directory(). '/languages' );
+	$directory=get_template_directory(). '/languages';	
+	$loaded=load_theme_textdomain('testTheme',$directory);
+	
+	error_log(var_export($loaded,true));
+	error_log(get_locale());
+	
+	
 }
 
 endif;

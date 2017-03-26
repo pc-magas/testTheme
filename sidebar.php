@@ -1,6 +1,6 @@
 <div id='sidebar'>
 	<div class="sidebar_group">
-		<h4><?=_e('Categories');?></h4>
+		<h4><?php _e('Categories','testTheme');?>:</h4>
 		<ul>
 			<?php
 		 		$categories=get_categories();
